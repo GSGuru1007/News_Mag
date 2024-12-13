@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
 
-export const Navbar = ({setCategory}) => {
+export const Navbar = ({ setCategory }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top " data-bs-theme="dark">
+    <nav
+      className="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      data-bs-theme="dark"
+    >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"><span className='badge bg-light text-dark fs-4'>NewsMag</span></a>
+        <a className="navbar-brand" href="#">
+          <span className="badge bg-light text-dark fs-4">NewsMag</span>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,21 +23,50 @@ export const Navbar = ({setCategory}) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            
             <li className="nav-item">
-              <div className="nav-link" style={{ cursor: "pointer" }} onClick={()=>setCategory("technology") }>Techonology</div>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory?.("technology")}
+              >
+                Technology
+              </div>
             </li>
             <li className="nav-item">
-              <div className="nav-link" style={{ cursor: "pointer" }} onClick={()=>setCategory("business") } >Bussiness</div>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory?.("business")}
+              >
+                Business
+              </div>
             </li>
             <li className="nav-item">
-              <div className="nav-link" style={{ cursor: "pointer" }} onClick={()=>setCategory("health") }>Health</div>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory?.("health")}
+              >
+                Health
+              </div>
             </li>
             <li className="nav-item">
-              <div className="nav-link" style={{ cursor: "pointer" }} onClick={()=>setCategory("sports") }>Spots</div>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory?.("sports")}
+              >
+                Sports
+              </div>
             </li>
             <li className="nav-item">
-              <div className="nav-link" style={{ cursor: "pointer" }} onClick={()=>setCategory("entertainment") }>Entertiment</div>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory?.("entertainment")}
+              >
+                Entertainment
+              </div>
             </li>
           </ul>
         </div>

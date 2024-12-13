@@ -1,6 +1,7 @@
 {
   "name": "news-mag",
   "private": true,
+  "homepage": "https://gsguru1007.github.io/News_Mag/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
